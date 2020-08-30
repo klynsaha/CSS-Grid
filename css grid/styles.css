@@ -1,11 +1,13 @@
 *{
 	box-sizing: border-box;
 }
+
 .main{
 	display: grid;
 	background: grey;
 	text-align: center;
 }
+
 .sidebar{
 	display: flex;
 	padding: 30px;
@@ -14,6 +16,7 @@
 	color: brown;
 	font-size: 21px;
 }
+
 .sidebar a{
 	text-decoration: none;
 	padding: 30px;
@@ -22,22 +25,26 @@
 	align-items: center;
 
 }
+
 @media (min-width: 1000px){
 	.main{
 		display: flex;
 		text-align: center;
 	}
+
 	.sidebar{
 		display: grid;
 		grid-column: span 1;
 		grid-row: span 1;
 		text-align: center;
 	}
+
 	.item{
 		display: grid;
 		grid-width:auto;
 	}
 }
+
 .container{
 	flex: 1 1 80%;
 	padding: 5px;
@@ -48,6 +55,7 @@
 	grid-template-rows:repeat(6, 1fr);
 	grid-gap:.5em;
 }
+
 .item:hover{
 	filter: opacity(100%);
 	font-size: 30px;
@@ -72,20 +80,20 @@
 	padding: 5%;
 	filter: opacity(100%);
 }
+
 .one{
 	background-image:url("images/1.jpg");
 	background-size: cover;
 	grid-column:span 2;
 	grid-row:span 2;
 	min-height: 300px;
-
 }
+
 .two{
 	background-image: url("images/2.jpg");
 	background-size: cover;
 	grid-column:span 3;
 	grid-row:span 3;
-
 }
 
 .three{
@@ -94,18 +102,21 @@
 	grid-column:span 2;
 	grid-row:span 2;
 }
+
 .four{
 	background-image: url("images/4.jpg");
 	background-size: cover;
 	grid-column:span 1;
 	grid-row:span 1;
 }
+
 .five{
 	background-image: url("images/5.jpg");
 	background-size: cover;
 	grid-column:span 2;
 	grid-row:span 3;
 }
+
 .six{
 	background-image: url("images/6.jpg");
 	background-size: cover;
